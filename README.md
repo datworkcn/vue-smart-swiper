@@ -3,7 +3,7 @@ base on [Swiper4](https://github.com/nolimits4web/Swiper)
 
 [Swiper API](http://idangero.us/swiper/api/)
 
-###Usage
+### Usage
 ```
 npm install vue-smart-swiper --save
 import VueSmartSwiper from 'vue-smart-swiper'
@@ -14,7 +14,7 @@ npm run build
 ```
 
 
-###props:
+### props:
 ```
 pagination:Boolean false|true  是否显示分页
 button:Boolean false|true  是否显示 next prev按钮
@@ -23,7 +23,7 @@ option:Object  swiper配置文件
 
 
 ```
-###properties
+### properties
 ```
 swiper:Swiper Swiper实例 可以参考 Swiper4官方文档
 
