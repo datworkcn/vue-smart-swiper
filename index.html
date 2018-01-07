@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>vue-smart-swiper</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<style>
+    .swiper-slide:nth-child(2n+0) {
+        background: indianred;
+    }
+
+    .swiper-slide:nth-child(2n+1) {
+        background: cadetblue;
+    }
+
+    #swiper_1>.swiper-button-disabled{
+       display: none;
+    }
+
+    body, html {
+
+    }
+
+    #app {
+
+    }
+</style>
+<body>
+<div id="app">
+    <vue-smart-swiper ref="swiper_1" id="swiper_1" style="  width: 100%;height: 300px;" :pagination="true" :button="true" :option="{effect : 'coverflow'}">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+    </vue-smart-swiper>
+    <br/>
+    <vue-smart-swiper style=" width: 100%;height: 300px;" :pagination="true" :scrollbar="true" :option="{direction: 'vertical',effect : 'slide'}">
+
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+
+
+    </vue-smart-swiper>
+</div>
+
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="dist/vue-smart-swiper.js"></script>
+<script>
+    new Vue({
+        el: '#app', data: {},
+        mounted: function () {
+            this.$nextTick(function () {
+                console.log(this.$refs.swiper_1.swiper)
+            })
+        },
+        methods: {},
+        components: {
+            VueSmartSwiper: VueSmartSwiper
+        }
+    })
+</script>
+</body>
+</html>
