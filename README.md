@@ -14,7 +14,7 @@ npm run build
 ```
 
 
-### props:
+### Props:
 ```
 pagination:Boolean false|true  是否显示分页
 button:Boolean false|true  是否显示 next prev按钮
@@ -23,7 +23,7 @@ option:Object  swiper配置文件
 
 
 ```
-### properties
+### Properties
 ```
 swiper:Swiper Swiper实例 可以参考 Swiper4官方文档
 
